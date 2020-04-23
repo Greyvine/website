@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="greyvine-logo"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="46"
+   height="49"
+   viewBox="0 0 46 49">
+    <path
+        fill="none"
+        fill-rule="evenodd"
+        stroke="#ffffff"
+        stroke-width="3.4"
+        stroke-linecap="square"
+        stroke-linejoin="miter"
+        stroke-miterlimit="4.0999999"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        d="m 26.5349,47.10315 16.79087,-29.08263 -27.19022,-15.69828 -13.81331,23.92535 18.19039,10.50223 8.87085,-15.36476 -8.95616,-5.17084 -3.13135,5.42366" />
+</svg>
