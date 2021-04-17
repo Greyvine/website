@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Greyvine/website#readme",
   "dependencies": {
+    "@ctrl/tinycolor": "^3.4.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "emailjs-com": "^2.6.4",

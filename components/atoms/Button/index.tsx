@@ -11,13 +11,21 @@ const Root = styled.button`
     &:hover {
         background: ${props => props.theme.colors.primary};
     }
+
+    &:disabled {
+        background: ${props => props.theme.colors.inputBorder};
+        &:hover {            
+            background: ${props => props.theme.colors.inputBorder}
+        }
+    }
 `
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button: React.FunctionComponent<Props> = ({
     type = 'button',
+    disabled,
     children
-}) => <Root type={type}>{children}</Root>
+}) => <Root type={type} disabled={disabled}>{children}</Root>
 
 export default Button

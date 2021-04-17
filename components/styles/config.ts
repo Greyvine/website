@@ -1,20 +1,28 @@
+import { lighten } from 'utils'
+
 const greyvineColors = {
     white: '#ffffff',
     grey: '#aaa',
-    lightBlue: 'rgba(61,85,204,1)',
+    ceruleanBlue: 'rgba(61,85,204,1)',
     darkBlue: 'rgba(0,42,127,1)',
-    darkestBlue: 'rgba(0,22,37,1)'
+    richBlackFogra29: 'rgba(0,22,37,1)',
+    darkGreen: 'rgb(30, 70, 32)',
+    lightSeaGreen: '#00A9A5',
+    hotPink: 'rgb(252, 109, 171)',
+    magenta: '#C60F7B'
 }
 
 export const defaultTheme = {
     colors: {
-        buttonBackground: greyvineColors.lightBlue,
+        buttonBackground: greyvineColors.ceruleanBlue,
         invertText: greyvineColors.white,
         primary: greyvineColors.darkBlue,
-        headerBackground: greyvineColors.lightBlue,
-        footerBackground: greyvineColors.darkestBlue,
-        primaryGradient: `linear-gradient(to bottom, ${greyvineColors.lightBlue} 1%, ${greyvineColors.darkBlue} 100%)`,
-        inputBorder: greyvineColors.grey
+        headerBackground: greyvineColors.ceruleanBlue,
+        footerBackground: greyvineColors.richBlackFogra29,
+        primaryGradient: `linear-gradient(to bottom, ${greyvineColors.ceruleanBlue} 1%, ${greyvineColors.darkBlue} 100%)`,
+        inputBorder: greyvineColors.grey,
+        successText: greyvineColors.lightSeaGreen,
+        successBackground: lighten(greyvineColors.lightSeaGreen, 80)
     }
 }
 
