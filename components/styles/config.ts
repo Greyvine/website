@@ -1,5 +1,6 @@
 const greyvineColors = {
     white: '#ffffff',
+    grey: '#aaa',
     lightBlue: 'rgba(61,85,204,1)',
     darkBlue: 'rgba(0,42,127,1)',
     darkestBlue: 'rgba(0,22,37,1)'
@@ -7,11 +8,13 @@ const greyvineColors = {
 
 export const defaultTheme = {
     colors: {
+        buttonBackground: greyvineColors.lightBlue,
         invertText: greyvineColors.white,
         primary: greyvineColors.darkBlue,
         headerBackground: greyvineColors.lightBlue,
         footerBackground: greyvineColors.darkestBlue,
-        primaryGradient: `linear-gradient(to bottom, ${greyvineColors.lightBlue} 1%, ${greyvineColors.darkBlue} 100%)`
+        primaryGradient: `linear-gradient(to bottom, ${greyvineColors.lightBlue} 1%, ${greyvineColors.darkBlue} 100%)`,
+        inputBorder: greyvineColors.grey
     }
 }
 
@@ -26,13 +29,16 @@ export const Space = {
     X5: '1rem',
     X6: '0.5rem',
     X7: '0.3rem',
-    X8: '0.25rem'
+    X8: '0.25rem',
+    X9: '0.08rem'
 }
 
 export const FontSize = {
+    XXS: '0.9rem',
     XS: '1rem',
     S: '1.5rem',
     XL: '2rem',
+    XL2: '3rem',
     XXL: '8rem'
 }
 
