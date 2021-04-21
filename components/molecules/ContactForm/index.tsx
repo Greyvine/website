@@ -19,12 +19,15 @@ const userId = 'user_8BSb3CUDWlMVWRUYcLUHt'
 
 const ContactForm: React.FunctionComponent = () => {
     const [hasSucceeded, setHasSucceeded] = useState(false)
+    const [hasFailed, setHasFailed] = useState(false)
     const onSubmit = (values: any) => {
         emailjs.send(serviceId, templateId, values, userId)
             .then((response) => {
                 setHasSucceeded(true)
+                setHasFailed(false)
             }, (err) => {
-                console.log('FAILED...', err)
+                setHasFailed(true)
+                setHasSucceeded(false)
             });
     }
     return (
@@ -53,6 +56,7 @@ const ContactForm: React.FunctionComponent = () => {
                 </fieldset>
                 <Button type="submit" disabled={hasSucceeded}>Send</Button>
                 {hasSucceeded && <Alert severity="success">Your message was sent successfully!</Alert>}
+                {hasFailed && <Alert severity="error">Could not send message!</Alert>}
             </FormRoot>
         } />
     )

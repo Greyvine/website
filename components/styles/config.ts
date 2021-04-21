@@ -22,7 +22,9 @@ export const defaultTheme = {
         primaryGradient: `linear-gradient(to bottom, ${greyvineColors.ceruleanBlue} 1%, ${greyvineColors.darkBlue} 100%)`,
         inputBorder: greyvineColors.grey,
         successText: greyvineColors.lightSeaGreen,
-        successBackground: lighten(greyvineColors.lightSeaGreen, 80)
+        successBackground: lighten(greyvineColors.lightSeaGreen, 80),
+        errorText: greyvineColors.hotPink,
+        errorBackground: lighten(greyvineColors.hotPink, 40)
     }
 }
 
