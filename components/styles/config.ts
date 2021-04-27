@@ -58,7 +58,7 @@ const zIndexList = [
   
 export type ZIndexName = typeof zIndexList[number] | 'negative'
 
-export const zIndex = (name: ZIndexName) => {
+export function zIndex(name: ZIndexName): number {
     if (name === 'negative') return -1
     const targetIndex = zIndexList.indexOf(name)
     return zIndexList.length - targetIndex
