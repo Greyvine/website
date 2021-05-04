@@ -1,7 +1,10 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import React from "react"
+import Document, {Head, Html, Main, NextScript} from "next/document"
 
 export default class MyDocument extends Document {
-    render() {
+
+    render(): React.ReactElement {
+
         return <Html>
             <Head>
                 <meta charSet="utf-8" />
@@ -12,5 +15,7 @@ export default class MyDocument extends Document {
                 <NextScript />
             </body>
         </Html>
+
     }
+
 }

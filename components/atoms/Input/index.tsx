@@ -1,18 +1,18 @@
-import { Space } from "@components/styles/config"
+import React, {InputHTMLAttributes} from "react"
+import {Space} from "@components/styles/config"
 import styled from "@emotion/styled"
-import { InputHTMLAttributes } from "react"
 
 const Root = styled.input`
-    border: 1px solid ${props => props.theme.colors.inputBorder};
+    border: 1px solid ${(props) => props.theme.colors.inputBorder};
     padding: ${Space.X5};
     width: 100%;
     
     &:hover {
-        border-color: ${props => props.theme.colors.primary};
+        border-color: ${(props) => props.theme.colors.primary};
     }
     
     &:focus {
-        border-color: ${props => props.theme.colors.headerBackground};
+        border-color: ${(props) => props.theme.colors.headerBackground};
     }
 `
 

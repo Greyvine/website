@@ -9,9 +9,8 @@ const Root = styled.section`
     width: 100%;
 `
 
-const Section: React.FunctionComponent = ({ children }) => 
-    <Root>
-        {children}
-    </Root>
+const Section: React.FunctionComponent = ({ children }) => <Root>
+    {children}
+</Root>
 
 export default Section

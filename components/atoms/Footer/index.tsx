@@ -1,13 +1,12 @@
-import { FontSize, Space } from '@components/styles/config'
-import styled from '@emotion/styled'
-import 'react'
-import React from 'react'
-import LogoTitle from '@components/atoms/LogoTitle'
+import React from "react"
+import { FontSize, Space } from "@components/styles/config"
+import styled from "@emotion/styled"
+import LogoTitle from "@components/atoms/LogoTitle"
 
 const Root = styled.footer`
     align-items: center;
-    background: ${props => props.theme.colors.footerBackground};
-    color: ${props => props.theme.colors.invertText};
+    background: ${(props) => props.theme.colors.footerBackground};
+    color: ${(props) => props.theme.colors.invertText};
     display: flex;
     padding: ${Space.X4} ${Space.X4};
 `
@@ -23,14 +22,14 @@ const Line = styled.p`
 
 const Wrapper = styled.div``
 
-const Footer = () => <Root>
+const Footer: React.FC = () => <Root>
     <Wrapper>
         <LogoTitle />
         <Section>
             <Line>&copy; {new Date().getFullYear()} Greyvine Inc.</Line>
             <Line>Registered in Canada 946622-3</Line>
         </Section>
-        
+
         <Section>
             <Line>Greyvine House</Line>
             <Line>29 Lauralynn Crescent</Line>
