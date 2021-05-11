@@ -9,7 +9,7 @@ type NavigationItem = {
 }
 
 const items: NavigationItem[] = [
-    { name: "Projects", href: "/projects" },
+    // { name: "Projects", href: "/projects" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" }
 ]
@@ -28,7 +28,6 @@ const NavigationLink: React.FunctionComponent<NavigationItem> = ({ name, href })
 const NavigationList = styled.ul`
     display: flex;
     justify-content: space-between;
-    width: 10rem;
 `
 const NavigationListItem = styled.li`
     display: flex;

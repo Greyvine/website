@@ -13,8 +13,8 @@ const Root = styled.header`
   height: ${Height.siteHeader};
   z-index: ${zIndex("site-header")};
   padding: ${Space.X5};
-  position: sticky;
-  top: 0;
+  // position: sticky;
+  // top: 0;
 `
 
 const StyledLink = styled.a`

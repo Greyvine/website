@@ -2,6 +2,7 @@ import {lighten} from "utils"
 
 const greyvineColors = {
     "white": "#ffffff",
+    "lightGrey": "#eef",
     "grey": "#aaa",
     "ceruleanBlue": "rgba(61,85,204,1)",
     "darkBlue": "rgba(0,42,127,1)",
@@ -14,6 +15,8 @@ const greyvineColors = {
 
 export const defaultTheme = {
     "colors": {
+        "background": greyvineColors.white,
+        "secondaryBackground": greyvineColors.lightGrey,
         "buttonBackground": greyvineColors.ceruleanBlue,
         "invertText": greyvineColors.white,
         "primary": greyvineColors.darkBlue,
@@ -31,7 +34,8 @@ export const defaultTheme = {
 export const Height = {
     "siteHeader": "4rem",
     "cover": "24rem",
-    "largeLogo": "5rem"
+    "largeLogo": "5rem",
+    "lineHeight": "1.2rem"
 }
 
 export const Space = {
@@ -50,6 +54,11 @@ export const FontSize = {
     "XL": "2rem",
     "XL2": "3rem",
     "XXL": "8rem"
+}
+
+export const FontWeight = {
+    "narrow": 200,
+    "NORMAL": "normal"
 }
 
 const zIndexList = ["site-header"] as const
