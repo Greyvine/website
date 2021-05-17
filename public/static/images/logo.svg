@@ -7,10 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    width="46"
    height="49"
+   preserveAspectRatio="xMidYMid meet"
    viewBox="0 0 46 49">
     <path
         fill="none"
         fill-rule="evenodd"
+        pathLength="100"
         stroke="#ffffff"
         stroke-width="3.4"
         stroke-linecap="square"

@@ -24,7 +24,7 @@ const Center = styled.div`
 
 const Cover: React.FC = () => <Root>
     <Center>
-        <Logo height={Height.largeLogo} />
+        <Logo animate={true} height={Height.largeLogo} />
         <LogoTitle fontSize={fontSize} />
     </Center>
 </Root>
