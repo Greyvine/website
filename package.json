@@ -36,6 +36,7 @@
     "three": "^0.128.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "@types/react": "^17.0.3",
     "@types/three": "^0.128.0",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
